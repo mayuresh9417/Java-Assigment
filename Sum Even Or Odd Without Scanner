@@ -1,0 +1,27 @@
+/*WAP in Java To Sum Of Even Or Odd Number without Scanner*/
+public class Main
+{
+	public static void main(String[] args) {
+		int x=1,y=10,sum=0,i;
+		char choice=2;
+		switch(choice)
+		{
+		    case 1: for(i=x;i<=y;i++)
+                    if(i%2==0)
+                    {
+                        sum+=i;
+                        System.out.println("Addition Of Entered Even Number Is =" + sum);
+                    }
+            break;
+            case 2: for(i=x;i<=y;i++)
+                    if(i%2!=0)
+                    {
+                        sum+=i;
+                        System.out.println("Addition Of Entered Odd number Is =" + sum);
+                    }
+            break;        
+            default:System.out.print("enter Valid choice !");
+            break;
+		}
+	}
+}
