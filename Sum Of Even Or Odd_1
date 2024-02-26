@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int x,y,sum=0,i,m;
+		char choice;
+		Scanner input = new Scanner(System.in);
+		System.out.println("\nEnter Starting Number:\n");
+		x=input.nextInt();
+		System.out.println("\nEnter Ending Number:\n");
+		y=input.nextInt();
+		System.out.println("\nEnter Your Choice:\n 1.Even\n 2.Odd\n");
+		choice=input.next().charAt(0);
+		switch(choice)
+		{
+		    case 1:
+		        for(i=x;i<=y;i++)
+		        if(i%2==0)
+		        {
+		          sum+=i;
+		          System.out.println("Addition Of Entered Even Numbers="+ sum);
+		        }
+		    break;
+		    case 2: for(i=x;i<=y;i++)
+                    if(i%2!=0)
+                    {
+                        sum+=i;
+                        System.out.println("Addition Of Entered Odd number Is =" + sum);
+                    }
+            break;
+		    default: System.out.print("Enter Valid Choice !");
+		    break;
+		 }   
+    }
+}    
