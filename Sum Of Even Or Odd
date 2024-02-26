@@ -1,0 +1,15 @@
+/*WAP In Java To Sum Even Or Odd NUmber*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int x,y,sum=0,choice,i;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter Starting Number:");
+		x=input.nextInt();
+		System.out.println("Enter Ending Number:");
+		y=input.nextInt();
+		System.out.println("Enter Your Choice:");
+		choice=input.nextInt();
+	}
+}
