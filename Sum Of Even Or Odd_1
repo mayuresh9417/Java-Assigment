@@ -2,15 +2,15 @@ import java.util.*;
 public class Main
 {
 	public static void main(String[] args) {
-		int x,y,sum=0,i,m;
-		char choice;
+		int x,y,sum=0,i,choice;
+		//char choice;
 		Scanner input = new Scanner(System.in);
 		System.out.println("\nEnter Starting Number:\n");
 		x=input.nextInt();
 		System.out.println("\nEnter Ending Number:\n");
 		y=input.nextInt();
 		System.out.println("\nEnter Your Choice:\n 1.Even\n 2.Odd\n");
-		choice=input.next().charAt(0);
+		choice=input.nextInt();
 		switch(choice)
 		{
 		    case 1:
